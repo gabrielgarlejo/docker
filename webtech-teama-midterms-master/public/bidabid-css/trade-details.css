@@ -1,0 +1,227 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.item-display-panel {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.main-item-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    margin-bottom: 1.5rem;
+}
+
+.item-info h3 {
+    margin-top: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.owner {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+
+.offer-panel {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+    align-self: start;
+}
+
+.offer-panel h2 {
+    margin-top: 0;
+}
+
+.offer-panel .notice {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ffeeba;
+    background-color: #fff3cd;
+    color: #856404;
+    margin-bottom: 1rem;
+}
+
+.offer-panel .notice.success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.offer-panel .notice.error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.submit-offer-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #005bb5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-offer-btn:hover {
+    background-color: #044280;
+}
+
+
+a.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+a.card-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.view-details-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border-radius: 20px;
+}
+
+.seller-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.seller-link:hover {
+    text-decoration: underline;
+}
+
+.seller-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #f5a623;
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+.seller-rating .num {
+    color: #333;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Feedback drawer */
+.feedback-pane {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 360px;
+    max-width: 90vw;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -2px 0 12px rgba(0, 0, 0, .15);
+    transform: translateX(100%);
+    transition: transform .2s ease;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-pane.open {
+    transform: translateX(0);
+}
+
+.fb-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+}
+
+#fb-close {
+    background: none;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fb-body {
+    padding: 12px;
+    overflow: auto;
+}
+
+.fb-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.fb-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.fb-author {
+    color: #333;
+}
+
+.fb-rating {
+    color: #f5a623;
+    font-family: system-ui, sans-serif;
+}
+
+.fb-empty,
+.fb-loading,
+.fb-error {
+    padding: 18px 0;
+    color: #666;
+}
+
+.submit-offer-btn[disabled] {
+    opacity: .7;
+    cursor: not-allowed;
+}

@@ -1,0 +1,59 @@
+.card .timer {
+    font-size: 0.92em;
+    color: #E74C3C;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+.auction-phase-label {
+    font-size: .75em;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    padding: .09em .75em;
+    display: inline-block;
+    background: #28a745;
+}
+.auction-phase-label.upcoming {
+    background: #ffc107;
+    color: #333;
+}
+.auction-phase-label.ended {
+    background: #888;
+}
+.auctions-row-title {
+    margin-bottom: .2em;
+    padding-top: 1.2em;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #2c3e50;
+}
+#quick-view-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.57);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+#quick-view-content {
+    background: white;
+    border-radius: 8px;
+    padding: 1.8em 2em;
+    max-width: 460px;
+    width: 85vw;
+    box-shadow: 0 10px 32px rgba(0,0,0,0.15);
+    position: relative;
+}
+#quick-view-close {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    font-size: 1.9em;
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+}

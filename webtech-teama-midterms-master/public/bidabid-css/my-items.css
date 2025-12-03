@@ -1,0 +1,162 @@
+.main-content .page-header {
+    text-align: center;
+    margin: 0.5rem auto;
+    max-width: 400px;
+}
+
+.main-content .page-header h1 {
+    font-size: 1.5em;
+}
+
+.main-content .page-header p {
+    font-size: 1.0em;
+    color: #666;
+}
+
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    background: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.view-toggle button {
+    padding: 0.75rem 1.5rem;
+    margin: 0 0.25rem;
+    border: none;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.view-toggle button.active {
+    background: #007bff;
+    color: white;
+}
+
+.view-toggle button:hover {
+    background: #e9ecef;
+}
+
+.view-toggle button.active:hover {
+    background: #0056b3;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 220px;
+    max-width: 260px;
+    width: 240px;
+    height: 450px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    padding: 1em;
+    margin-bottom: 1em;
+    flex: 0 0 240px;
+    position: relative;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 0.5em;
+}
+
+.delete-btn.blue-btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5em 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 0.5em;
+    width: 100%;
+}
+
+.delete-btn.blue-btn:hover {
+    background: #0056b3;
+}
+
+.sub-section {
+    margin-bottom: 2rem;
+}
+
+.auctions-row-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.section {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #1f2937;
+}
+
+.empty-subsection {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    color: #666;
+}
+
+.empty-subsection a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.empty-subsection a:hover {
+    text-decoration: underline;
+}
+
+.trade-card {
+    min-width: 220px;
+}
+
+.winning-bid {
+    color: #10b981;
+    font-weight: 600;
+}
